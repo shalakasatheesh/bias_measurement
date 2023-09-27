@@ -6,14 +6,19 @@ Current implementation has two measures:
 
 ## To run the program:
 
-`python3 bias_measure.py --text example_text.txt --target_group_name professions`
+    python3 bias_measure.py \
+    --text example_text.txt \
+    --target_group_name professions
 
 - Values for `--target_group_name` can be currently chosen from `professions` or `adjectives`. 
 - `--text` should be set to path to the .txt file containing the text to be evaluated. (eg: `example_text.txt`)
 
 ## To save the results:
 
-`python3 bias_measure.py --text example_text.txt --target_group_name professions --folder_to_save_results "."`
+    python3 bias_measure.py \
+    --text example_text.txt \
+    --target_group_name professions \
+    --folder_to_save_results "."
 
 - `folder_to_save_results` must contain the path to the **folder** to save the results to as a .csv file. This is an optional argument. (eg: `./src`)
 
